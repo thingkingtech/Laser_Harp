@@ -1,0 +1,9 @@
+Laser Harp (Harp Space) for Spier Light Art 2019.
+
+3 lasers shine from left and right hand side of art piece (6 lasers total)
+They hit mirrors (some one-way, some two-way) to form a laser pattern, eventually terminating into 14 LDR sensors.
+LDR resistance triggers a transistor when in complete darkness, input into Raspberry Pi GPIO. LDR does not trigger transistor when laser is shining on it.
+When Raspberry Pi GPIO pin is triggered, the corresponding note is sent to Sonic Pi, which then plays it on a speaker.
+
+3 ultra-sonic misters are placed above the piece, switching on and off via relay, so that the beams can be seen easily.
+The piece is activated by a button so that the misters and lasers are not constantly on.
